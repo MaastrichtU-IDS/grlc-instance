@@ -1,0 +1,7 @@
+#+ endpoint: http://localhost:8890/sparql
+#+ summary: Number of unique objects
+#+ tags: 
+#+   - metadata 
+
+SELECT (COUNT(DISTINCT ?o ) AS ?distinctObjects)
+{  ?s ?p ?o  FILTER(!isLiteral(?o)) }
