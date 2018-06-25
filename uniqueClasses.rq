@@ -1,0 +1,7 @@
+#+ endpoint: http://localhost:8890/sparql
+#+ summary: Number of unique classes
+#+ tags: 
+#+   - metadata 
+
+SELECT (COUNT(DISTINCT ?o) AS ?distinctClasses)
+{ ?s a ?o }
