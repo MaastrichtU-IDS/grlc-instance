@@ -1,0 +1,7 @@
+#+ endpoint: http://localhost:8890/sparql
+#+ summary: Number of unique, typed entities in the dataset
+#+ tags: 
+#+   - metadata 
+
+SELECT (COUNT(DISTINCT ?s) AS ?entities)
+{ ?s a [] }
