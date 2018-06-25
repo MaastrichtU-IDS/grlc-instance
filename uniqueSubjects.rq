@@ -1,0 +1,7 @@
+#+ endpoint: http://localhost:8890/sparql
+#+ summary: Number of unique subjects
+#+ tags: 
+#+   - metadata 
+
+SELECT (COUNT(DISTINCT ?s) AS ?distinctSubjects)
+{  ?s ?p ?o   }
